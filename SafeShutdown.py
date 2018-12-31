@@ -18,8 +18,8 @@ power.on()
 
 def when_pressed():
     led.blink(.2, .2)
+    os.system("sudo killall kodi_v7.bin && sleep 5s")
     os.system("sudo killall emulationstation && sleep 5s")
-    os.system("sudo killall kodi && sleep 5s")
     os.system("sudo shutdown -h now")
 
 
@@ -28,8 +28,8 @@ def when_released():
 
 
 def reboot():
+    os.system("sudo killall kodi_v7.bin && sleep 5s")
     os.system("sudo killall emulationstation && sleep 5s")
-    os.system("sudo killall kodi && sleep 5s")
     os.system("sudo reboot")
 
 
